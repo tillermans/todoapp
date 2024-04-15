@@ -5,24 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb33fe41-fbd7-4317-ac72-784ba2d1a063" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylist/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylist/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylist/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mylist/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mylist/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mylist/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/todolist/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +41,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.todoapp.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "git-widget-placeholder": "master",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/DELL/todoapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -72,6 +62,14 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\todoapp\todolist" />
+      <recent name="C:\Users\DELL\todoapp" />
+      <recent name="C:\Users\DELL\todoapp\todolist\templates\todolist" />
+      <recent name="C:\Users\DELL\todoapp\todolist\templates" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="todoapp" type="Python.DjangoServer" factoryName="Django server">
       <module name="todoapp" />
@@ -80,6 +78,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="mylist.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -114,7 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1712936689051</updated>
       <workItem from="1712936690177" duration="2041000" />
-      <workItem from="1712980314620" duration="8860000" />
+      <workItem from="1712980314620" duration="18427000" />
+      <workItem from="1713154039081" duration="1164000" />
     </task>
     <servers />
   </component>
