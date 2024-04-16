@@ -1,0 +1,63 @@
+<!-- todolist/templates/todolist/index.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'todolist/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4">To-Do List</h1>
+        <form action="{% url 'add' %}" id="todo-form" method="POST" role="form">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.text }}
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Add To-Do</button>
+        </form>
+        <hr>
+        <div id="todo-list">
+        <ul class="list-group t20">
+            {% for todo_item in todo_items %}
+                <div class="">
+                {% if todo_item.completed %}
+                <li class="list-group-item todo-completed">{{ todo_item.text }}</li>
+                {% else %}
+                    <a href="{% url 'completed' todo_item.id %}"><li class="list-group-item">{{ todo_item.text }}</li></a>
+                {% endif %}
+                </div>
+            {% endfor %}
+        </ul>   
+        </div>
+        <hr>
+        <div class="row t10">
+            <div class="col-lg-12">
+                <div class="btn-toolbar">
+                    <div class="btn-group">
+                        <a href="{% url 'deleteCompleted' %}">
+                        <button id="delete-all" class="btn btn-danger">Delete Completed</button>
+                        </a>
+                        <a href="{% url 'deleteAll' %}">
+                        <button id="delete-completed" class="btn btn-warning ml-2">Delete All</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="{% static 'todolist/script.js' %}"></script>
+</body>
+</html>
